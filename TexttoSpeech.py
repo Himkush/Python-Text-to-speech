@@ -21,8 +21,7 @@ def removeFile():
     """Checks if myfile exists and if so, deletes."""
     if os.path.isfile(my_file):
         os.remove(my_file)
-
-#hello how are you
+        
         
 def playTts():
     webbrowser.open(my_file)  # the converted file i.e. mp3 will be open.
@@ -59,9 +58,7 @@ def checkContinue():
             return False
         else:
             print("Sorry, I didn't understand that. Please try again with either Y or N.")
-            ask_and_play("Sorry, I didn't understand that. Please try again with either Y or N.")
-            #time.sleep(2)
-            
+            ask_and_play("Sorry, I didn't understand that. Please try again with either Y or N.")            
 
 def hi1(hi):
     speech = 'Bhai ' + random.choice(hi).capitalize()
@@ -83,8 +80,6 @@ def repeat():
         speech = "Can't understand Please try again."
         ask_and_play(speech)
         hi1(hi)
-
-
     while True:
         speech = input('Hello '+"Enter the text:")
         removeFile()
